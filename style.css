@@ -1,0 +1,97 @@
+body {
+    font-family: Book Antiqua;
+    background: #E9ECF4;
+}
+
+.nav {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.character-selector {
+    display:inline;
+    text-align: center;
+    height: 804px;
+    width: 1200px;
+
+}
+
+.nav img {
+    width: 146px;
+    transition: transform .5s;
+}
+
+.character-selector img:hover{
+    transform: scale(1.1);
+}
+
+.contenedor-global {
+    position: relative;
+}
+
+
+.contenedor {
+    width: 1200px;
+    height: 800px;
+    position: absolute;
+    left: 50%;
+    margin-left: -600px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,auto);
+    background-image: url(./imagenes/tokyo03.jpg);
+    background-size: cover;    
+}
+
+
+
+.character-image {
+    grid-column: 1/2;
+}
+
+.character-image img {
+    max-height: 800px;
+    margin-left: 80px;
+}
+
+.aside {
+    grid-column: 2/3;
+}
+
+.aside h2 {
+    font-family: Bebas Neue;
+    font-size: 80px;
+    text-shadow: 8px 8px 12px black;
+    color: white;
+    max-height: 50px;
+}
+
+.aside h3 {
+    text-align: center;
+    font-family: Bebas Neue;
+    font-size: 45px;
+    max-height: 70px;
+    background-color: rgba(35, 34, 181, 0.9);
+    max-width: 60%;
+    padding: 5px;
+}
+
+
+.aside p {
+    max-width: 400px;
+    max-height: 250px;
+    overflow-y: scroll;
+    background-color: rgba(19, 19, 19, 0.8);
+    margin-right: 80px;
+    color: rgba(242, 242, 242, 0.9);
+    padding: 10px;
+}
+
+.aside p::-webkit-scrollbar {
+    width: 7px;
+}
+
+.aside p::-webkit-scrollbar-thumb {
+    background-color: #47429d;
+    border-radius: 5px;
+}
